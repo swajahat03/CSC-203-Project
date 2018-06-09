@@ -1,0 +1,12 @@
+How to trigger the event:
+A mouseclick should spawn Agent Michael Scarn from the movie "Threat Level Midnight" from the show "The Office" to appear.
+
+What happens when the event is triggered:
+Whenever Sonic comes close to Michael Scarn, he kills them and they just vanish.They will stay safe as long as they don't close to him. Mr. Dwight Schrute (Assistant to the regional manager) is also seen spectating this.
+
+What happens to the identies affected by this event:
+The only entities affected by this are the miners which are simply destroyed by Agent Scarn.
+
+The new entity:
+The new entity, which is Sonic in this case, replaces the miners and is killed by Michael Scarn.
+
