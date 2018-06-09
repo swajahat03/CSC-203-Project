@@ -8,5 +8,5 @@ What happens to the identies affected by this event:
 The only entities affected by this are the miners which are simply destroyed by Agent Scarn.
 
 The new entity:
-The new entity, which is Sonic in this case, replaces the miners and is killed by Michael Scarn.
+The new entity, which is Sonic in this case, replaces the miners and is killed by Michael Scarn if they try to get close to him.
 
