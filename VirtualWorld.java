@@ -30,11 +30,15 @@ public final class VirtualWorld
    public static final String FAST_FLAG = "-fast";
    public static final String FASTER_FLAG = "-faster";
    public static final String FASTEST_FLAG = "-fastest";
-   public static final double FAST_SCALE = 0.5;
-   public static final double FASTER_SCALE = 0.25;
-   public static final double FASTEST_SCALE = 0.10;
+   public static final double FAST_SCALE = 5;
+   public static final double FASTER_SCALE = 5;
+           //0.25;
+   public static final double FASTEST_SCALE = 5;
+                   //0.10;
+   public static final String SONIC_KEY = "sonic";
+   public static final String SONIC_ID = "sonic";
 
-   public static double timeScale = 1.0;
+   public static double timeScale = 0.3;
 
    public ImageStore imageStore;
    public WorldModel world;
@@ -70,14 +74,20 @@ public final class VirtualWorld
 
    }
 
+   int infinity = Integer.MAX_VALUE;
+
    public void mousePressed(processing.event.MouseEvent e){
       int x = e.getX()/TILE_WIDTH;
       int y = e.getY()/TILE_HEIGHT;
       view.threatLevelMidnight(x,y,imageStore);
-     // Point click = new Point(x,y);
-     // Sonic sonic = new Sonic(SONIC_ID, click,imageStore.getImageList(SONIC_KEY),5,6,0,4 );
-      // view.spawnSonic(sonic, click, scheduler,imageStore);
-   }
+      Point click = new Point(x,y);
+      Entity sonic = Create.createSonic("sonic",infinity, click, 5,6,imageStore.getImageList("sonic"));
+      ((Sonic) sonic).scheduleActions(sonic,world, scheduler, imageStore);
+      world.addEntity(sonic);
+ //    Point click = new Point(x,y);
+   //   Sonic sonic = new Sonic(SONIC_ID, click,0,6,imageStore.getImageList(SONIC_KEY) );
+     //  view.spawnSonic(sonic, click, scheduler,imageStore);
+}
    public void draw()
    {
       long time = System.currentTimeMillis();

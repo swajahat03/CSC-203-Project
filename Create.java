@@ -30,6 +30,14 @@ public class Create {
         return new OreBlob(id, pos, animationPeriod, actionPeriod ,images );
     }
 
+
+    public static Entity createSonic(String id, int resourceLimit, Point position, int actionPeriod, int animationPeriod,
+                                            List<PImage> images)
+    {
+        return new Sonic(id, position, images, actionPeriod, animationPeriod, 0, resourceLimit);
+    }
+
+
     public static Ore createOre(String id, int actionPeriod, Point pos,
                                 List<PImage> images)
     {

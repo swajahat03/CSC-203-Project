@@ -29,3 +29,10 @@ rocks images/rock.bmp
 vein images/vein.bmp
 background_default images/none.bmp
 rainbow images/rainbow.bmp
+sonic images/sonic1.bmp 252 252 252 0
+sonic images/sonic2.bmp 252 252 252 0
+sonic images/sonic3.bmp 252 252 252 0
+sonic images/sonic4.bmp 252 252 252 0
+sonic images/sonic5.bmp 252 252 252 0
+
+

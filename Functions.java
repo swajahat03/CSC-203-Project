@@ -43,7 +43,7 @@ final class Functions
    public static final String BGND_KEY = "background";
    public static final String QUAKE_KEY = "quake";
    public static final String BLOB_KEY = "blob";
-   private static final String SONIC_KEY = "sonic";
+
 
 
    public static void loadImages(Scanner in, ImageStore imageStore,

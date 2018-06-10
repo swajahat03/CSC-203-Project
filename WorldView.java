@@ -98,4 +98,9 @@ final class WorldView
    public static List<Point> clickPoints = new ArrayList<>();
 
 
+  // public void spawnSonic(Sonic sonic, Point click, EventScheduler sched, ImageStore imageStore) {
+    //  Create.createSonic("sonic",4, 5,imageStore.getImageList("sonic"),click);
+   //}
+
+
 }

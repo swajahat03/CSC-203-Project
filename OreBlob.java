@@ -66,29 +66,27 @@ public class OreBlob extends ScheduleAnimation implements Entity, AnimatedActor 
     private  boolean moveTo( WorldModel world,
                             Entity target, EventScheduler scheduler)
     {
+
         if (Point.adjacent(this.getPosition(), target.getPosition()))
         {
-            world.removeEntity( target);
-            scheduler.unscheduleAllEvents( target);
+            world.removeEntity(this);
+            scheduler.unscheduleAllEvents(this);
             return true;
         }
-        else
-        {
-            Point nextPos = nextPosition( world, target.getPosition());
+        else {
+            Point nextPos = this.nextPosition(world, this.position);
 
-            if (!this.position.equals(nextPos))
-            {
+            if (!this.position.equals(nextPos)) {
                 Optional<Entity> occupant = world.getOccupant(nextPos);
-                if (occupant.isPresent())
-                {
-                    scheduler.unscheduleAllEvents( occupant.get());
+                if (occupant.isPresent()) {
+                    scheduler.unscheduleAllEvents(this);
                 }
 
                 world.moveEntity(this, nextPos, world);
             }
             return false;
         }
-    }
+        }
 
     public static boolean adjacent(Point p1, Point p2)
     {

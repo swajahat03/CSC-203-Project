@@ -32,10 +32,10 @@ public class ActivityAction implements Action {
             entity.executeActivity(world, imageStore,
                     scheduler);
         }
-     //   else if(entity.getClass() = Sonic.class) {
-       //     entity.executeActivity(world, imageStore,
-        //            scheduler);
-        //}
+       else if(entity.getClass() == Sonic.class) {
+           entity.executeActivity(world, imageStore,
+                   scheduler);
+       }
         else
         {
             throw new UnsupportedOperationException(
