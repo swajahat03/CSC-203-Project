@@ -1,0 +1,20 @@
+Analyzing last putback before  2018-06-13 13:00
+
+
+***************  Grading Notes  ***************
+
+
+********************  Grade Calculation  ***************
+
+MISSED (10.0 points):  Submitted program compiles / passes checkgit
+GOOD (20.0 points):  Program runs
+GOOD (10.0 points):  Program correctly handles viewport and mouse clicks (when arrow keys are pressed)
+GOOD (10.0 points):  Program doesn't crash (runtime error, exception, etc.)
+GOOD (15.0 points):  At least 7 background tiles are changed
+GOOD (10.0 points):  Behavior of some other entity is changed
+GOOD (15.0 points):  A new mobile entity is created
+GOOD (10.0 points):  There are at least 9 concrete entity types
+    Late submission penalty:  -5.0%
+
+
+Final score:  85.5
